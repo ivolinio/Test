@@ -1,0 +1,25 @@
+<mvc:View
+   controllerName="sap.ui.demo.sap.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+  
+    <Button
+      icon="sap-icon://sap-ui5"
+      text="{i18n>showHelloButtonText}"
+      press=".onShowHello"/>
+    
+    <Button
+      type="Emphasized"
+      icon="sap-icon://sap-ui5"
+      text="Say Hey"
+      press=".onShowHey"
+      class="sapUiLargeMarginEnd"/>
+
+      
+    <Input
+      value="{/recipient/name}"
+      description="Hello {/recipient/name}"
+      valueLiveUpdate="true"
+      width="30%"
+      class="sapUiLargeMarginTop"/>
+</mvc:View>
